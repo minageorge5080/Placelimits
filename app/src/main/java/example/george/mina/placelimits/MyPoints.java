@@ -5,27 +5,37 @@ package example.george.mina.placelimits;
  */
 
 public class MyPoints {
-    private String lat;
-    private String lon;
+    private double lat;
+    private double lon;
+    private double alti;
 
-    public MyPoints(String lat, String lon) {
+    public MyPoints(double lat, double lon ,double alti) {
         setLat(lat);
         setLon(lon);
+        setAlti(alti);
     }
 
-    public String getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public void setLat(String lat) {
+    public void setLat(double lat) {
         this.lat = lat;
     }
 
-    public String getLon() {
+    public double getLon() {
         return lon;
     }
 
-    public void setLon(String lon) {
+    public void setLon(double lon) {
         this.lon = lon;
+    }
+
+    public double getAlti() {
+        return alti;
+    }
+
+    public void setAlti(double alti) {
+        this.alti = alti;
     }
 }
